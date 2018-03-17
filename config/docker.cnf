@@ -6,4 +6,6 @@ default-storage-engine="INNODB"
 max_allowed_packet="256M" 
 innodb_log_file_size="2GB" 
 transaction-isolation="READ-COMMITTED" 
-binlog_format="row" 
+binlog_format="row"
+innodb_fast_shutdown=0
+innodb_log_file_size=10M
