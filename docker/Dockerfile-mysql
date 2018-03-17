@@ -5,6 +5,5 @@ ENV MYSQL_ROOT_PASSWORD="S({hp!?QUth4~V4J"
 ENV MYSQL_DATABASE="confluence"
 ENV MYSQL_USER="confluence"
 ENV MYSQL_PASSWORD="g[fv7H[KVt<7,h[f"
-ENV MYSQL_CHARSET="utf8_bin"
 
-ADD ../config/docker.cnf /etc/mysql/conf.d/
+#ADD /config/docker.cnf /etc/mysql/conf.d/
