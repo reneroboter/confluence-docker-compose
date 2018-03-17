@@ -1,0 +1,16 @@
+version: '3'
+services:
+  database:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile-mysql
+  confluence:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile-confluence
+    ports:
+      - '8090:8090'
+    links:
+      - database
+    depends_on:
+      - database
