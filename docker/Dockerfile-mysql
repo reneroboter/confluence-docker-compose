@@ -7,11 +7,4 @@ ENV MYSQL_USER="confluence"
 ENV MYSQL_PASSWORD="g[fv7H[KVt<7,h[f"
 ENV MYSQL_CHARSET="utf8_bin"
 
-RUN echo 'sql-mode="NO_AUTO_VALUE_ON_ZERO"' >> /etc/mysql/conf.d/docker.cnf
-RUN echo 'character-set-server="utf8"' >> /etc/mysql/conf.d/docker.cnf
-RUN echo 'collation-server="utf8_bin"' >> /etc/mysql/conf.d/docker.cnf
-RUN echo 'default-storage-engine="INNODB"' >> /etc/mysql/conf.d/docker.cnf
-RUN echo 'max_allowed_packet="256M"' >> /etc/mysql/conf.d/docker.cnf
-RUN echo 'innodb_log_file_size="2GB"' >> /etc/mysql/conf.d/docker.cnf
-RUN echo 'transaction-isolation="READ-COMMITTED"' >> /etc/mysql/conf.d/docker.cnf
-RUN echo 'binlog_format="row"' >> /etc/mysql/conf.d/docker.cnf
+ADD ../config/docker.cnf /etc/mysql/conf.d/
