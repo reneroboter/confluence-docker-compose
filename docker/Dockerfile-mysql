@@ -6,4 +6,4 @@ ENV MYSQL_DATABASE="confluence"
 ENV MYSQL_USER="confluence"
 ENV MYSQL_PASSWORD="g[fv7H[KVt<7,h[f"
 
-#ADD /config/docker.cnf /etc/mysql/conf.d/
+ADD /config/docker.cnf /etc/mysql/conf.d/
