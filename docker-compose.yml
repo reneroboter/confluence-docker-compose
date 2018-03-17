@@ -3,7 +3,7 @@ services:
   database:
     build:
       context: .
-      dockerfile: docker/Dockerfile-mysql
+      dockerfile: docker/Dockerfile-postgres
   confluence:
     build:
       context: .

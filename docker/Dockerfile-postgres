@@ -1,0 +1,3 @@
+FROM postgres:latest
+
+ENV POSTGRES_PASSWORD="g[fv7H[KVt<7,h[f"
